@@ -8,6 +8,16 @@
 --grad_plate:linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 94.22%),
     #FFF6EE;
 
+/* social icons background */
+--instBcg:linear-gradient(222.85deg, #EA6E66 19.04%, #E51BE2 85.62%, #B62A99 85.63%);;
+--fbBcg:linear-gradient(32.12deg, #003ACE 12.94%, #2786F5 86.6%),
+    #2786F5;
+--telBcg:linear-gradient(200.7deg, #2BCB00 17.4%, #007803 92.05%),
+    #48C95F;
+
+    /* background-colors */
+--secondSection:linear-gradient(0.17deg, #FFFFFF 4.47%, rgba(255, 255, 255, 0) 18.08%),
+    #FFF6EE;
 /* Fonts */
 --Rounded_Mplus:'M PLUS Rounded 1c',
     sans-serif;
@@ -21,4 +31,8 @@
 --mobile:320px;
 --padding_mobile:15px;
 
+
+/* Backgrounds */
+
+--main_sky_bcg: linear-gradient(0deg, #FFFFFF 3.79%, rgba(255, 255, 255, 0) 44.2%), #44D6FF;
 }
