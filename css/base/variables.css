@@ -1,0 +1,24 @@
+:root{
+/* Color styles */
+--purple:#D07CC6;
+--beige:#FFF6EE;
+--white:#FFFFFF;
+--carrot:#FF5F4E;
+--stroke:linear-gradient(0deg, rgba(237, 211, 208, 0.71) 3.53%, rgba(255, 255, 255, 0) 75.41%);
+--grad_plate:linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 94.22%),
+    #FFF6EE;
+
+/* Fonts */
+--Rounded_Mplus:'M PLUS Rounded 1c',
+    sans-serif;
+--Montserrat:'Montserrat',
+        sans-serif;
+  
+/* Breakpoints */
+--desktop:1920px;
+--padding_desktop:375px;
+
+--mobile:320px;
+--padding_mobile:15px;
+
+}
