@@ -8,6 +8,7 @@
 --grad_plate:linear-gradient(360deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 94.22%),
     #FFF6EE;
 
+
 /* social icons background */
 --instBcg:linear-gradient(222.85deg, #EA6E66 19.04%, #E51BE2 85.62%, #B62A99 85.63%);;
 --fbBcg:linear-gradient(32.12deg, #003ACE 12.94%, #2786F5 86.6%),
@@ -15,15 +16,31 @@
 --telBcg:linear-gradient(200.7deg, #2BCB00 17.4%, #007803 92.05%),
     #48C95F;
 
+
+
     /* background-colors */
 --secondSection:linear-gradient(0.17deg, #FFFFFF 4.47%, rgba(255, 255, 255, 0) 18.08%),
     #FFF6EE;
+    --logoBackground:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+        #FFF6EF;
+
+
+
 /* Fonts */
 --Rounded_Mplus:'M PLUS Rounded 1c',
     sans-serif;
 --Montserrat:'Montserrat',
         sans-serif;
   
+
+  /* Border radiuses       */
+
+  --mainLogoWrapper:0px 0px 20px 20px;
+
+
+/* box-shadows */
+
+--light:0px 7px 8px rgba(97, 123, 163, 0.21);
 /* Breakpoints */
 --desktop:1920px;
 --padding_desktop:375px;
