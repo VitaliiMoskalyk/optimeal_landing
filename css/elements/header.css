@@ -1,0 +1,46 @@
+/* header content */
+.navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+    margin-top: 22px;
+}
+
+.main-title {
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 60px;
+
+    margin: 40px 0 16px 0;
+}
+
+.main-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-bottom: 23px;
+}
+
+.more-button {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+
+    width: fit-content;
+    padding: 8px 32px 16px 35px;
+
+    transform: skew(2deg, -1deg) rotateZ(3deg);
+    background: linear-gradient(99.41deg, #FFB1A4 -5.48%, #FF5F4E 79.15%);
+    box-shadow: inset 4px -5px 0px rgba(255, 204, 191, 0.68);
+    border-radius: 50px 50px 40px 20px;
+}
+
+.more-button:hover,
+.more-button:focus {
+    background: linear-gradient(99.41deg, #FFB1A4 -5.48%, #FF5F4E 79.15%);
+    box-shadow: inset -6px 5px 0px rgba(153, 46, 18, 0.3);
+}

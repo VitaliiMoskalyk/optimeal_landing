@@ -1,0 +1,103 @@
+/* Composition from fruits */
+.grass-icon,
+.cloud-left-icon,
+.cloud-right-icon,
+.friends-icon,
+.tree-right,
+.tree-left {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grass-icon {
+    bottom: 1px;
+    width: 100%;
+    height: 138px;
+    background-image: url(../../images/Trava.svg);
+    background-position: center top;
+}
+
+.cloud-left-icon {
+    z-index: -2;
+    top: 36px;
+    left: -60px;
+    width: 300px;
+    height: 135px;
+    background-image: url(../../images/cloud-left.svg);
+    background-position: left;
+
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes slide {
+    
+0% {
+        top: 5%;
+    }
+
+    50% {
+       top:10%;
+    }
+
+    100% {
+        top: 5%
+    }
+     
+}
+@keyframes slide2 {
+
+    0%{
+        top: 30%;
+    }
+
+    50%{
+        top: 20%;
+    }
+    75%{right:-5%;}
+  100%{top:30%}
+
+}
+.cloud-right-icon {
+    z-index: -2;
+    top: 277px;
+    right: 0;
+    width: 300px;
+    height: 250px;
+    background-image: url(../../images/cloud-right.svg);
+    background-position: left bottom;
+
+    animation-name: slide2;
+        animation-duration: 45s;
+        animation-iteration-count: infinite;
+}
+
+.friends-icon {
+    z-index: 2;
+    bottom: 65px;
+    right: -50px;
+    width: 100%;
+    height: 239px;
+    background-image: url(../../images/personajy.svg);
+    background-position: left bottom;
+}
+
+.tree-right {
+    z-index: 0;
+    bottom: 100px;
+    left: -30px;
+    width: 150px;
+    height: 155px;
+    background-image: url(../../images/tree-left.svg);
+}
+
+.tree-left {
+    z-index: 0;
+    bottom: 100px;
+    right: -30px;
+    width: 150px;
+    height: 200px;
+    background-image: url(../../images/tree-right.svg);
+}
