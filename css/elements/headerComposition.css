@@ -19,7 +19,7 @@
 }
 
 .cloud-left-icon {
-    z-index: -2;
+    z-index: 2;
     top: 36px;
     left: -60px;
     width: 300px;
@@ -34,7 +34,7 @@
 }
 @keyframes slide {
     
-0% {
+    0% {
         top: 5%;
     }
 
@@ -52,16 +52,19 @@
     0%{
         top: 30%;
     }
-
     50%{
         top: 20%;
     }
-    75%{right:-5%;}
-  100%{top:30%}
+    75%{
+        right:-5%;
+    }
+    100%{
+        top:30%
+}
 
 }
 .cloud-right-icon {
-    z-index: -2;
+    z-index: 2;
     top: 277px;
     right: 0;
     width: 300px;

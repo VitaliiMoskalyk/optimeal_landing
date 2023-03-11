@@ -21,9 +21,10 @@
     /* background-colors */
 --secondSection:linear-gradient(0.17deg, #FFFFFF 4.47%, rgba(255, 255, 255, 0) 18.08%),
     #FFF6EE;
-    --logoBackground:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
+--logoBackground:linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%),
         #FFF6EF;
-
+--titleVolume:linear-gradient(355.69deg, #FFF6EF 12.78%, rgba(255, 255, 255, 0) 92.31%),
+    #FFFFFF;
 
 
 /* Fonts */
@@ -36,11 +37,16 @@
   /* Border radiuses       */
 
   --mainLogoWrapper:0px 0px 20px 20px;
+  --titleWrapper:18px 20px 19px 23px;
 
 
 /* box-shadows */
 
 --light:0px 7px 8px rgba(97, 123, 163, 0.21);
+--titleVolume:rgba(207, 152, 152, 0.2) 0px 50px 100px -20px,
+    rgba(207, 152, 152, 0.39) 0px 30px 60px -30px,
+    rgba(207, 152, 152, 0.39) 0px -2px 6px 0px inset;
+    
 /* Breakpoints */
 --desktop:1920px;
 --padding_desktop:375px;

@@ -5,6 +5,8 @@
 @import url(./elements/container.css);
 @import url(./elements/headerComposition.css);
 @import url(./elements/header.css);
+@import url(./elements/slider.css);
+@import url(./elements/newLine.css);
 
 body{
     font-family: var(--Rounded_Mplus);
@@ -19,246 +21,92 @@ header{
     overflow: hidden;
 }
 
-
-
-
-
-
-/* section#2 */
-
-
-.new-product_section::before{
-    content: "";
-    position: absolute;
-    top: -25px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../../images/backup.svg);
-    width: 100%;
-    height: 25px;
-}
-
-.new-product_section {
-   position: relative;
-    color: var(--purple);
-    background: var(--secondSection);
-}
-
-.new-product_section::after {
-    content: "";
-    position: absolute;
-    bottom: -65px;
-   
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(../images/back-down.svg);
-    width: 100%;
-    height: 65px;
-}
-
-.section-title_newLine{
-    font-weight: 800;
-    font-size: 34px;
-    line-height: 43px;
-    text-align: center;
-
-    max-width: 360px;
-    margin: 60px auto;
-
-    background: linear-gradient(355.69deg, #FFF6EF 12.78%, rgba(255, 255, 255, 0) 92.31%),
-    #FFFFFF;
-    border-radius:  75px 70px 40px 35px;
-    padding: 18px 20px 19px 23px;
-    transform: skew(1deg, 1deg);
-    box-shadow: rgba(207, 152, 152, 0.2) 0px 50px 100px -20px, rgba(207, 152, 152, 0.39) 0px 30px 60px -30px, rgba(207, 152, 152, 0.39) 0px -2px 6px 0px inset;
-}
-
-.section-title_items{
-    font-weight: 800;
-    font-size: 26px;
-    line-height: 28px;
-    text-align: center;
-    margin-top: 23px;
-}
-
-.section-title_description{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    margin-top: 16px;
-}
-
-.newLine-items_list :nth-child(1n) {
-    max-width: 362px;
-    margin: 0 auto;
-}
-
-.background{
-    width: 330px;
-    height: 350px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-}
-
-.animation1{
-    position: relative;
-    background-image:url(../images/content_layout.svg);
-}
-
-.animation1::after{
-    content: "";
-    position: absolute;
-
-    background-image: url(../images/yoghurt-fruits.svg);
-    width: 325px;
-    height: 315px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    
-}
-
-
-.animation2{
-    position: relative;
-    background-image: url(../images/content_layout2.svg);
-}
-.animation2::after{
-    content: "";
-    position: absolute;
-    
-    background-image: url(../images/mother.svg);
-    width: 325px;
-    height: 307px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
- 
-}
-
-.animation3{
-    position: relative;
-    background-image: url(../images/content_layout3.svg);
-}
-.animation3::after{
-    content: "";
-    position: absolute;
-    
-    background-image: url(../images/juice.svg);
-    width: 325px;
-    height: 300px;
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-        
-}
-
-
-
 /* my vitamins section */
 
 .my-vitamins_section{
     background: #FFEBDA;
     color: var(--purple);
-}
-
-
-section#micro-slider {
-    padding-bottom: 30px;
-    /* overflow: hidden; */
-    position: relative;
-}
-
-
-
-.micro-slider {
-    height: 450px;
+    padding-top: 50px;
  
-    /* margin-top: 90px; */
-    /* margin-bottom: 90px; */
-    /* padding: 90px; */
-    /* margin: 10px 0; */
-    position: relative;
-    
-    width: 100%;
 }
 
-.micro-slider.fullwidth {
-    height: 400px;
-    /* margin: 64px 0; */
-}
-
-.micro-slider.fullwidth .slider-item {
-    height: auto;
-    
-    width: 100%;
-}
-
-.slider-wrapper {
-
-    overflow: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-    transform-origin: 0 50%;
-}
-
-.slider-item {
- 
-
-
-    height: 262px;
-   
-    left: 20%;
-    position: absolute;
-
-
-    width: 202px;
-    cursor: pointer;
-}
-
-
-.slider-item:not(.active) {cursor: pointer;}
-
-.indicators {
-    bottom: 0px;
-    left: 50%;
-    list-style-type: none;
-    margin:0 auto;
-    padding: 0;
-    position: absolute;
-   
-}
-
-.indicators li {
-    color: #fff;
-    float: left;
-    height: 16px;
-    margin-right: 8px;
+.vitamins_wrapper{
+    background-color: var(--white);
+    border-radius: 75px 70px 40px 35px;
+    padding: 45px 4px 53px 12px;
     text-align: center;
-    width: 16px;
+        box-shadow: var(--titleVolume);
+        margin-bottom: 80px;
 }
 
-.indicators li:last-child {
-    margin: 0;
+.vitamins_title{
+    font-weight: 800;
+    font-size: 52px;
+    line-height: 60px;
+    color: var(--carrot);
+    margin-bottom: 11px;
 }
 
-.indicators a {
-    background: #FFF;
-    border-radius: 8px;
-    border: 1px solid #E6E9EC;
-    color: #FFF;
-    display: inline-block;
-    height: 16px;
-    width: 16px;
+.vitamins_part{
+    color: var(--white);
+    background-color: var(--carrot);
+    border-radius: 26px;
+    padding: 2px;
 }
 
-.indicators .active a {
-    background: #E6E9EC;
+.vitamins-variants{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 46px;
+    text-align: start;     
 }
 
+.vitamins_description{
+    text-align: start;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 16px;
+    margin-bottom: 23px;
+}
+
+.vitamins_complex{
+    border: 2px solid rgba(208, 124, 198, 0.3);
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 15px;
+}
+
+.complex-part{
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 45px;
+    vertical-align: middle;
+}
+
+.vitamins_tastes{
+    text-align: start;
+    display: flex;
+    justify-content:start;
+    align-items: start;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    margin-top: 20px;
+    margin-bottom: 37px;
+}
+
+.vitamins_tastes h4{
+    font-weight: 800;
+    font-size: 18px;
+    padding: 0 4px;
+        
+}
+
+.vitamins_button{
+    margin: 0 auto;
+    color: var(--white);
+}
