@@ -1,0 +1,35 @@
+/* form */
+
+.contact_us-form {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 22px;
+    max-width: 470px;
+
+}
+
+.contact_us-form input {
+    outline: none;
+    border: none;
+    margin: 0 auto;
+}
+
+.contact_us-form input:not(:last-of-type) {
+    background: var(--white);
+    border-radius: 35px;
+    color: #135A9A;
+
+    margin-bottom: 33px;
+    padding: 22px 31px;
+    width: 100%;
+}
+
+.contact_us-form input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #038DB3;
+    opacity: 0.3;
+}

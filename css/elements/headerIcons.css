@@ -13,7 +13,13 @@
     box-shadow: var(--light);
     border-radius: var(--mainLogoWrapper);
 }
-
+@media screen and (min-width:768px) {
+    .logo-icon::after {
+        top: -40px;
+        left: -25px;
+    width: 230px;
+    height: 120px;
+}}
 /* Icons */
 .logo-icon {
     position: relative;
@@ -22,6 +28,12 @@
     height: 100%;
 
 }
+@media screen and (min-width:768px) {
+    .logo-icon {
+        width: 170px;
+    }
+}
+
 .logo-icon :first-of-type{
     width: 100%;
     height: 100%;
@@ -34,6 +46,11 @@
 .social-icons_list li:not(:last-child) {
     margin-right: 10px;
 }
+@media screen and (min-width:768px) {
+    .social-icons_list li:not(:last-child) {
+    margin-right: 30px;
+    }
+}
 
 .social-icon_wrapper {
     display: flex;
@@ -44,6 +61,14 @@
     padding: 9px;
     border-radius: 20px;
     box-shadow: var(--light);
+}
+@media screen and (min-width:768px) {
+    .social-icon_wrapper {
+        height: 50px;
+        width: 50px;
+border-radius: 30px;
+
+    }
 }
 
 .social-icon {

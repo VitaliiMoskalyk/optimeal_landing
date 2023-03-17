@@ -12,6 +12,12 @@
     width: 100%;
     height: 25px;
 }
+@media screen and (min-width:768px) {
+    .new-product_section::before {
+        top: -70px;
+        height: 75px;
+    }
+}
 
 .new-product_section {
     position: relative;
@@ -22,14 +28,16 @@
 .new-product_section::after {
     content: "";
     position: absolute;
-    bottom: -64px;
+    bottom: -1;
     z-index: 1;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
     background-image: url(../../images/back-down.svg);
     width: 100%;
-    height: 65px;
+    height: 75px;
 }
+
 
 .section-title_newLine {
     font-weight: 800;
@@ -46,6 +54,11 @@
     transform: skew(1deg, 1deg);
     box-shadow: var(--titleVolume)
 }
+@media screen and (min-width:768px) {
+    .section-title_newLine{
+        max-width: 620px;
+    }
+}
 
 .section-title_items {
 
@@ -58,6 +71,7 @@
 
 }
 
+
 .section-title_description {
     font-weight: 400;
     font-size: 18px;
@@ -67,8 +81,16 @@
 }
 
 .newLine-items_list :nth-child(1n) {
-    max-width: 362px;
+    max-width: 470px;
     margin: 0 auto;
+}
+
+@media screen and (min-width:1200px) {
+    .newLine-items_list {
+       display: flex;
+       flex-direction: row;
+    
+    }
 }
 
 .background {
@@ -78,6 +100,14 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+@media screen and (min-width:1200px) {
+    .background.animation2 {
+        display: block;
+        transform: scale(1.5);
+        
+        margin-bottom: 100px;
+    }
 }
 
 .animation1 {
@@ -118,6 +148,7 @@
     background-size: contain;
 
 }
+
 
 .animation3 {
     position: relative;

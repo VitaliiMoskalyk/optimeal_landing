@@ -7,6 +7,13 @@
     height: 40px;
     margin-top: 22px;
 }
+@media screen and (min-width:768px) {
+    .navigation-wrapper {
+    height: 50px;
+    margin-top: 36px;
+    
+    }
+}
 
 .main-title {
     font-weight: 800;
@@ -14,12 +21,24 @@
     line-height: 60px;
     margin: 40px 0 16px 0;
 }
+@media screen and (min-width:768px) {
+  
+}
 
 .main-description {
+    display: block;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 23px;
+    max-height: 195px;
+    word-wrap: break-word;
+    overflow:hidden;
+}
+@media screen and (min-width:768px) {
+    .main-description {
+        max-width: 470px;
+    }
 }
 
 .more-button {

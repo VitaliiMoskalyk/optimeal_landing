@@ -12,10 +12,16 @@
 
 .grass-icon {
     bottom: 1px;
+    z-index: -3;
     width: 100%;
     height: 138px;
     background-image: url(../../images/Trava.svg);
     background-position: center top;
+}
+@media screen and (min-width:768px) {
+    .grass-icon {
+    height: 285px;
+    }
 }
 
 .cloud-left-icon {
@@ -78,29 +84,52 @@
 }
 
 .friends-icon {
-    z-index: 2;
+    z-index: -1;
     bottom: 65px;
     right: -50px;
     width: 100%;
-    height: 239px;
+    height: 285px;
     background-image: url(../../images/personajy.svg);
+   
     background-position: left bottom;
+}
+@media screen and (min-width:768px) {
+    .friends-icon {
+        background-size: initial;
+        bottom: 75px;
+    right: -250px;
+height: 485px;
+    }
 }
 
 .tree-right {
-    z-index: 0;
+    z-index: -4;
     bottom: 100px;
     left: -30px;
     width: 150px;
     height: 155px;
     background-image: url(../../images/tree-left.svg);
 }
+@media screen and (min-width:768px) {
+    .tree-right {
+        bottom: 225px;
+        width: 338px;
+        height: 355px;
+    }
+}
 
 .tree-left {
-    z-index: 0;
+    z-index: -4;
     bottom: 100px;
     right: -30px;
     width: 150px;
     height: 200px;
     background-image: url(../../images/tree-right.svg);
+}
+@media screen and (min-width:768px) {
+    .tree-left {
+        bottom: 105px;
+        width: 399px;
+        height: 555px;
+    }
 }
