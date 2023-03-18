@@ -1,12 +1,9 @@
-/* form */
-
 .contact_us-form {
     display: flex;
     align-items: start;
     flex-direction: column;
-    margin-bottom: 22px;
-    max-width: 470px;
-
+    margin-bottom:1.2rem;
+    max-width: 36rem;
 }
 
 .contact_us-form input {
@@ -17,18 +14,17 @@
 
 .contact_us-form input:not(:last-of-type) {
     background: var(--white);
-    border-radius: 35px;
+    border-radius: 1.9rem;
     color: #135A9A;
 
-    margin-bottom: 33px;
-    padding: 22px 31px;
+    margin-bottom:1.8rem;
+    padding: 1.2rem 1.7rem;
     width: 100%;
 }
 
 .contact_us-form input::placeholder {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5rem;
 
     color: #038DB3;
     opacity: 0.3;

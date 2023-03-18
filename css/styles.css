@@ -1,15 +1,19 @@
 @import url(./base/reset.css);
 @import url(./base/modern_normolize.css);
 @import url(./base/variables.css);
-@import url(./elements/headerIcons.css);
 @import url(./elements/container.css);
 @import url(./elements/headerComposition.css);
 @import url(./elements/header.css);
-@import url(./elements/slider.css);
-@import url(./elements/newLine.css);
+@import url(./elements/products.css);
 @import url(../css/elements/form.css);
 @import url(../css/elements/warningModal.css);
 @import url(../css/elements/vitamins.css);
+@import url(../css/elements/socials.css);
+@import url(../css/elements/button.css);
+
+html{
+    font-size: var(--baseFontSize);
+}
 
 body{
     font-family: var(--Rounded_Mplus);
@@ -21,7 +25,7 @@ header{
     z-index: 0;
     background: var(--main_sky_bcg);
     height: 100vh;
-    min-height: 844px;
+    min-height: 47rem;
     overflow: hidden;
 }
 

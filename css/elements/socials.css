@@ -1,0 +1,58 @@
+.block-socials {
+    display: flex;
+}
+
+.block-socials li:not(:last-child) {
+    margin-right: .6rem;
+}
+
+@media screen and (min-width:768px) {
+    .block-socials li:not(:last-child) {
+        margin-right: 1.7rem;
+    }
+}
+
+.block-socials__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* max-width - 3 rem  -- inline style from <svg/>*/
+    width: 2.2rem;
+
+    padding: .5rem;
+    border-radius: 1.1rem;
+    box-shadow: var(--light);
+}
+
+@media screen and (min-width:768px) {
+    .block-socials__wrapper {
+        /* max-width - 3 rem  -- inline style from <svg/>*/
+        width: 2.8rem;
+        border-radius: 1.7rem;
+    }
+}
+
+/* Background colours of social items */
+.block-socials :first-child a {
+    background: var(--instBcg);
+    height: 100%;
+}
+
+.block-socials :nth-child(2) a {
+    background: var(--fbBcg);
+    height: 100%;
+}
+
+.block-socials :last-child a {
+    background: var(--telBcg);
+    height: 100%;
+}
+
+.block-socials li a:hover,.block-socials li a:focus{
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s transform;
+}
+
+.block-socials li a{
+    transition: ease-in-out 0.3s transform;
+}

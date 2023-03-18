@@ -1,27 +1,23 @@
-/* section#2 */
-
-
-.new-product_section::before {
+.block-products::before {
     content: "";
     position: absolute;
-    top:-72px;
+    top:-4rem;
     z-index: 1;
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     background-image: url(../../images/backup.svg);
     width: 100%;
-    height: 75px;
+    height: 4.2rem;
 }
 
-
-.new-product_section {
+.block-products {
     position: relative;
     color: var(--purple);
     background: var(--secondSection);
 }
 
-.new-product_section::after {
+.block-products::after {
     content: "";
     position: absolute;
     bottom: -1;
@@ -31,19 +27,19 @@
     background-position: bottom;
     background-image: url(../../images/back-down.svg);
     width: 100%;
-    height: 75px;
+    height: 4.2rem;
 }
 
 
-.section-title_newLine {
+.block-products__title {
     font-weight: 800;
-    font-size: 34px;
-    line-height: 43px;
+    font-size: 1.9rem;
+    line-height: 2.4rem;
     text-align: center;
     padding: var(--titleWrapper);
 
-    max-width: 360px;
-    margin: 60px auto;
+    max-width: 20rem;
+    margin: 3.3rem auto;
 
     background: var(--titleVolume);
     border-radius: 75px 70px 40px 35px;
@@ -51,54 +47,53 @@
     box-shadow: var(--titleVolume)
 }
 @media screen and (min-width:768px) {
-    .section-title_newLine{
-        max-width: 620px;
+    .block-products__title{
+        max-width: 34rem;
     }
 }
 
-.section-title_items {
+.block-products__item {
 
     font-weight: 800;
-    font-size: 26px;
-    line-height: 28px;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
     text-align: center;
-    padding-top: 23px;
-    padding-bottom: 16px;
+    padding-top: 1.3rem;
+    padding-bottom: 0.9rem;
 
 }
 
 
-.section-title_description {
+.block-products__description {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
+    line-height: 1.5rem;
     text-align: center;
-    padding: 16px 3px;
+    padding: 0.9rem .2rem;
 }
 
-.newLine-items_list :nth-child(1n) {
-    max-width: 470px;
+.block-products__list :nth-child(1n) {
+    max-width: 26rem;
     margin: 0 auto;
 }
 
 @media screen and (min-width:1200px) {
-    .newLine-items_list {
+    .block-products__list {
        display: flex;
        flex-direction: row;
     
     }
 }
 
-.background {
-    width: 330px;
-    height: 350px;
+.block-products__background {
+    width: 18rem;
+    height: 19rem;
 
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
 @media screen and (min-width:1200px) {
-    .background.animation2 {
+    .block-products__background.animation2 {
         display: block;
         transform: scale(1.5);
         

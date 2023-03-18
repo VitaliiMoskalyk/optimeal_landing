@@ -38,37 +38,7 @@
     animation-iteration-count: infinite;
     
 }
-@keyframes slide {
-    
-    0% {
-        top: 5%;
-    }
 
-    50% {
-       top:10%;
-    }
-
-    100% {
-        top: 5%
-    }
-     
-}
-@keyframes slide2 {
-
-    0%{
-        top: 30%;
-    }
-    50%{
-        top: 20%;
-    }
-    75%{
-        right:-5%;
-    }
-    100%{
-        top:30%
-}
-
-}
 .cloud-right-icon {
     z-index: 2;
     top: 277px;
@@ -79,8 +49,8 @@
     background-position: left bottom;
 
     animation-name: slide2;
-        animation-duration: 45s;
-        animation-iteration-count: infinite;
+    animation-duration: 45s;
+    animation-iteration-count: infinite;
 }
 
 .friends-icon {
@@ -97,8 +67,8 @@
     .friends-icon {
         background-size: initial;
         bottom: 75px;
-    right: -250px;
-height: 485px;
+        right: -250px;
+        height: 485px;
     }
 }
 
@@ -133,4 +103,43 @@ height: 485px;
         width: 399px;
         height: 555px;
     }
+}
+
+
+
+/* animations */
+@keyframes slide {
+
+    0% {
+        top: 5%;
+    }
+
+    50% {
+        top: 10%;
+    }
+
+    100% {
+        top: 5%
+    }
+
+}
+
+@keyframes slide2 {
+
+    0% {
+        top: 30%;
+    }
+
+    50% {
+        top: 20%;
+    }
+
+    75% {
+        right: -5%;
+    }
+
+    100% {
+        top: 30%
+    }
+
 }

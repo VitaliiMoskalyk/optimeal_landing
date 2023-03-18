@@ -1,0 +1,21 @@
+.beautiful-button {
+    font-weight: 800;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    text-align: center;
+
+    width: fit-content;
+    padding: .4rem 1.8rem .9rem 1.9rem;
+    border-radius:2.8rem 2.8rem 2.2rem 1.1rem;
+
+    transform: skew(2deg, -1deg) rotateZ(3deg);
+    background: linear-gradient(99.41deg, #FFB1A4 -5.48%, #FF5F4E 79.15%);
+    box-shadow: inset 4px -5px 0px rgba(255, 204, 191, 0.68);
+    
+}
+
+.beautiful-button:hover,
+.beautiful-button:focus {
+    background: linear-gradient(99.41deg, #FFB1A4 -5.48%, #FF5F4E 79.15%);
+    box-shadow: inset -6px 5px 0px rgba(153, 46, 18, 0.3);
+}

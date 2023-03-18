@@ -16,42 +16,52 @@
 <body>
   <header>
     <div class="container">
-      <div class="navigation-wrapper">
+      <div class="block-header__navigation" id="main">
         <!-- Logo container -->
-        <a href="#" class="logo-icon"><svg>
-            <use xlink:href="./images/sprite.svg#icon-logo"></use>
+        <a href="#" class="block-header__logo"><svg viewBox="0 0 100 32" style="max-width: 11rem;">
+            <use href="./images/sprite.svg#icon-logo"></use>
           </svg></a>
-
+        <!-- anchors, visible only from screen 1200 px -->
+        <ul class="block-header__anchors">
+          <li><a href="#main">Главная</a></li>
+          <li><a href="#products">Товары</a></li>
+          <li><a href="#variety">Что выбрать</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
         <!-- Social-items list -->
-        <ul class="social-icons_list">
+        <ul class="block-socials">
           <li>
-            <a href="#" class="social-icon_wrapper inst"><svg class="social-icon">
+            <a href="https://www.instagram.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
+                style="max-width: 3rem;">
                 <use xlink:href="./images/sprite.svg#icon-instagram"></use>
               </svg></a>
           </li>
           <li>
-            <a href="#" class="social-icon_wrapper fb"><svg class="social-icon">
+            <a href="https://uk-ua.facebook.com/" class="block-socials__wrapper" target="_blank"><svg
+                viewBox="0 0 32 32" style="max-width: 3rem;">
                 <use xlink:href="./images/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li>
-            <a href="#" class="social-icon_wrapper tel"><svg class="social-icon">
+            <a href="https://www.whatsapp.com/?lang=uk" class="block-socials__wrapper" target="_blank"><svg
+                viewBox="0 0 32 32" style="max-width: 3rem;">
                 <use xlink:href="./images/sprite.svg#icon-phone"></use>
               </svg></a>
           </li>
         </ul>
+
       </div>
 
       <div>
-        <h1 class="main-title">Витамины для детей</h1>
-        <p class="main-description">
-          Новая линейка детских БАДов, соответствующих прогрессивному времени, OptiMeal KIDS Разработано ведущими
+        <h1 class="block-header__title">Витамины для детей</h1>
+        <p class="block-header__description" id="main-title">
+          Новая линейка детских БАДов, соответствующих прогрессивному времени, OptiMeal KIDS. Разработано ведущими
           экспертами
           Украины в области специализированного детского питания. Миссия компании - заботиться о здоровье Ваших детей,
           создавая
           только эффективные и удобные формы витаминов и
         </p>
-        <a href="#" class="more-button">Подробнее</a>
+        <a href="#products" class="beautiful-button">Подробнее</a>
       </div>
     </div>
 
@@ -65,17 +75,17 @@
   </header>
 
   <main>
-    <section class="new-product_section ">
+    <section class="block-products" id="products">
       <div class="container">
-        <h2 class="section-title_newLine">
+        <h2 class="block-products__title">
           Новая линейка My #1st OptiMeal KIDS
         </h2>
 
-        <ul class="newLine-items_list">
+        <ul class="block-products__list">
           <li>
-            <div class="background animation1"></div>
-            <h3 class="section-title_items">Уникальное сочетание</h3>
-            <p class="section-title_description">
+            <div class="block-products__background animation1"></div>
+            <h3 class="block-products__item">Уникальное сочетание</h3>
+            <p class="block-products__description">
               Новая линейка детских БАДов, соответствующих прогрессивному времени, OptiMeal KIDS Разработано ведущими
               экспертами
               России в области специализированного детского питания. Миссия компании - заботиться о здоровье Ваших
@@ -84,19 +94,19 @@
             </p>
           </li>
           <li>
-            <div class="background animation2"></div>
-            <h3 class="section-title_items">Витаминов хватит на всех!</h3>
-            <p class="section-title_description">Добавки от OptiMeal kids подойдут для всей семьи, они одинаково важны
+            <div class="block-products__background animation2"></div>
+            <h3 class="block-products__item">Витаминов хватит на всех!</h3>
+            <p class="block-products__description">Добавки от OptiMeal kids подойдут для всей семьи, они одинаково важны
               для детей и взрослых, не откажите себе в
               удовольствие насладиться вкусами с пользой для здоровья.
             </p>
           </li>
           <li>
-            <div class="background animation3"></div>
-            <h3 class="section-title_items">
+            <div class="block-products__background animation3"></div>
+            <h3 class="block-products__item">
               Удобная и эффективная форма выпуска
             </h3>
-            <p class="section-title_description">
+            <p class="block-products__description">
               Эффективная концентрация действующих веществ совмещена с удобной
               формой применения. Восполнять дефицит витаминов теперь легко и
               приятно.
@@ -106,35 +116,18 @@
       </div>
     </section>
 
-    <!-- visible only when width less than 768 px -->
-    <!-- <section id="micro-slider">
-      <h2>Our products</h2> -->
-    <!-- <div class="micro-slider">
-        <img class="slider-item" src="./images/calcium.png" alt="our variety of vitamins " />
-        <img class="slider-item" src="./images/D3.png" alt="our variety of vitamins " />
-        <img class="slider-item" src="./images/omega.png" alt="our variety of vitamins " />
-        <img class="slider-item" src="./images/vitzmin.png" alt="our variety of vitamins " />
-      </div>
-      <div class="slide-bottom"></div>
-      <div class="cloud-right-icon"></div>
-      <div class="cloud-left-icon"></div>
-    </section>  -->
-    <!-- visible only when width more than 768 px -->
-    <!-- <section class="slider-transformation">
-      <div class="container"></div>
-    </section> -->
-    <section class="my-vitamins_section">
-      <div class="my-vitamins_under">
+    <section class="block-vitamins" id="variety">
+      <div class="block-vitamins_under">
         <div class="cloud-right-icon"></div>
         <div class="cloud-left-icon"></div>
 
-        <ul class="vitamins-list">
-          <li><img src="../../images/calcium.png" alt="" /></li>
-          <li><img src="../../images/D3.png" alt="" /></li>
-          <li><img src="../../images/omega.png" alt="" /></li>
-          <li><img src="../../images/vitzmin.png" alt="" /></li>
+        <ul class="block-vitamins__list">
+          <li><img src="./images/calcium.png" alt="vitamin `calcium`" /></li>
+          <li><img src="./images/D3.png" alt="vitamin `D3`" /></li>
+          <li><img src="./images/omega.png" alt="vitamin `Omega`" /></li>
+          <li><img src="./images/vitzmin.png" alt="vitamin `vitzmin`" /></li>
         </ul>
-        <div class="vitamins-bottom"></div>
+        <div class="block-vitamins_bottom"></div>
       </div>
 
       <div class="container">
@@ -167,7 +160,7 @@
 
           </div>
 
-          <a href="#" class="more-button vitamins_button">Где купить?</a>
+          <a href="#" class="beautiful-button vitamins_button">Где купить?</a>
         </div>
       </div>
 
@@ -229,7 +222,7 @@
 
 
   </main>
-  <footer class="contact_us">
+  <footer class="contact_us" id="contacts">
     <div class="container">
       <h2 class="contact_us-title">Связаться
         с нами</h2>
@@ -240,7 +233,7 @@
           <input id="POST-name" type="text" name="name" placeholder="Имя">
           <label for="POST-tel"></label>
           <input id="POST-tel" type="tel" name="tel" placeholder="Телефон">
-          <input type="submit" class="more-button vitamins_button" value="Отправить">
+          <input type="submit" class="beautiful-button vitamins_button" value="Отправить">
         </div>
 
       </form>
@@ -264,24 +257,27 @@
         </div>
       </address>
 
-      <ul class="social-icons_list">
+      <ul class="block-socials">
         <li>
-          <a href="#" class="social-icon_wrapper inst"><svg class="social-icon">
+          <a href="https://www.instagram.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
+              style="max-width: 3rem;">
               <use xlink:href="./images/sprite.svg#icon-instagram"></use>
             </svg></a>
         </li>
         <li>
-          <a href="#" class="social-icon_wrapper fb"><svg class="social-icon">
+          <a href="https://uk-ua.facebook.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
+              style="max-width: 3rem;">
               <use xlink:href="./images/sprite.svg#icon-facebook"></use>
             </svg></a>
         </li>
         <li>
-          <a href="#" class="social-icon_wrapper tel"><svg class="social-icon">
+          <a href="https://www.whatsapp.com/?lang=uk" class="block-socials__wrapper" target="_blank"><svg
+              viewBox="0 0 32 32" style="max-width: 3rem;">
               <use xlink:href="./images/sprite.svg#icon-phone"></use>
             </svg></a>
         </li>
       </ul>
-      <img src="../../images/optimeal-logo.svg" alt="optimeal sport nutririon logo" class="footer-logo" />
+      <img src="./images/optimeal-logo.svg" alt="optimeal sport nutririon logo" class="footer-logo" />
 
     </div>
   </footer>
@@ -291,6 +287,15 @@
       Некоторые события не работают в демонстрационном режиме
     </div>
   </div> -->
+  <script>
+    if (window.innerWidth < 768) {
+      const element = document.getElementById('main-title');
+      const text = element.textContent;
+      const index = text.indexOf('.');
+      element.textContent = text.substring(0, index + 1);
+    }
+
+  </script>
   <script src="./js/slider.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
