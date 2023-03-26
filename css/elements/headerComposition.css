@@ -15,7 +15,7 @@
     z-index: -3;
     width: 100%;
     height: 138px;
-    background-image: url(../../images/Trava.svg);
+    background-image: url(../../images/Trava.webp);
     background-position: center top;
 }
 @media screen and (min-width:768px) {
@@ -30,7 +30,7 @@
     left: -60px;
     width: 300px;
     height: 135px;
-    background-image: url(../../images/cloud-left.svg);
+    background-image: url(../../images/cloud-left.webp);
     background-position: left;
 
     animation-name: slide;
@@ -45,7 +45,7 @@
     right: 0;
     width: 300px;
     height: 250px;
-    background-image: url(../../images/cloud-right.svg);
+    background-image: url(../../images/cloud-right.webp);
     background-position: left bottom;
 
     animation-name: slide2;
@@ -59,7 +59,7 @@
     right: -50px;
     width: 100%;
     height: 285px;
-    background-image: url(../../images/personajy.svg);
+    background-image: url(../../images/personajy.webp);
    
     background-position: left bottom;
 }
@@ -78,7 +78,7 @@
     left: -30px;
     width: 150px;
     height: 155px;
-    background-image: url(../../images/tree-left.svg);
+    background-image: url(../../images/tree-left.webp);
 
 }
 @media screen and (min-width:768px) {
@@ -95,7 +95,7 @@
     right: -30px;
     width: 150px;
     height: 200px;
-    background-image: url(../../images/tree-right.svg);
+    background-image: url(../../images/tree-right.webp);
 }
 @media screen and (min-width:768px) {
     .tree-left {

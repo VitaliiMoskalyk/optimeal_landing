@@ -1,7 +1,6 @@
 .block-vitamins_under {
     position: relative;
     top: -40px;
-
     width: 100%;
     height: 784px;
 
@@ -21,7 +20,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: bottom;
-
         overflow: hidden;
     }
 }
@@ -38,11 +36,10 @@
     width: 100%;
 
     height: 750px;
-    background-image: url(../../images/fon_product.svg);
+    background-image: url(../../images/fon_product.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-
     overflow: hidden;
 }
 
@@ -58,30 +55,94 @@
     position: relative;
     top: 30%;
     z-index: 2;
-
     width: max-content;
     margin: 0 auto;
     height: 265px;
     display: flex;
+}
 
+.block-vitamins__list li{
+    height: fit-content;
+}
+
+.block-vitamins__list li:hover,.block-vitamins__list li:focus{
+    color: var(--carrot);
+    transform: scale(1.1) translateY(10px);
 }
 
 .block-vitamins__list :nth-child(1n):not(:last-of-type) {
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 
-
-.vitamins_wrapper {
+.block-vitamins__wrapper {
     background-color: var(--white);
     border-radius: 75px 70px 40px 35px;
     padding: 45px 27px 53px 16px;
     text-align: center;
     box-shadow: var(--titleVolume);
     margin-bottom: 80px;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-bottom: 213px;
 }
 
-.vitamins_title {
+@media screen and (min-width:1200px) {
+    .block-vitamins__wrapper {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        max-width: 1270px;
+
+    }
+}
+@media screen and (min-width:1200px) {
+.block-vitamins__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+
+    bottom:1px;
+    width: 535px;
+    background: var(--main_sky_bcg) url(../../images/Vitamins_fly.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    z-index: 1;
+
+    border-radius: 75px 0 0 35px;
+    overflow: hidden;  
+}
+}
+
+.block-vitamins__left{
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width:1200px) {
+    .block-vitamins__left {
+       position: relative;
+       display: flex;
+       visibility: visible;
+       
+       width: 50%;
+       height:auto;
+       overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+    .block-vitamins__right {
+        width:50%;
+        height: auto;
+    }
+}
+
+.block-vitamins__title {
     font-weight: 800;
     font-size: 52px;
     line-height: 60px;
@@ -89,19 +150,18 @@
     margin-bottom: 24px;
 }
 
-.vitamins_part {
+.block-vitamins__title-part {
     color: var(--white);
     background-color: var(--carrot);
     border-radius: 26px;
     padding: 2px;
 }
 
-.vitamins-variants {
+.block-vitamins__variants {
     font-size: 24px;
     font-weight: 800;
     line-height: 46px;
     text-align: start;
-
 }
 
 .vitamins-variants:active,
@@ -110,7 +170,7 @@
     color: var(--carrot);
 }
 
-.vitamins_description {
+.block-vitamins__description {
     text-align: start;
     font-weight: 400;
     font-size: 18px;
@@ -120,14 +180,18 @@
     margin-bottom: 23px;
 }
 
-.vitamins_complex {
+.block-vitamins__complex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
     border: 2px solid rgba(208, 124, 198, 0.3);
     border-radius: 20px;
     font-weight: 800;
     font-size: 16px;
-    line-height: 15px;
-    max-width: 470px;
+    max-width: 740px;
     margin: 0 auto;
+    
 }
 
 .complex-part {
@@ -135,15 +199,15 @@
     font-size: 30px;
     line-height: 45px;
     vertical-align: middle;
+    margin-right: 10px;
 }
 
-.vitamins_tastes {
+.block-vitamins__tastes {
     text-align: start;
     display: flex;
     justify-content: start;
     align-items: start;
     font-weight: 400;
-    font-size: 18px;
     line-height: 27px;
 
     margin-top: 20px;
@@ -152,12 +216,65 @@
 
 .vitamins_tastes h4 {
     font-weight: 800;
-    font-size: 18px;
     padding: 0 4px;
-
 }
 
 .vitamins_button {
     margin: 0 auto;
     color: var(--white);
+}
+
+.block-vitamins__buttons-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 21px;
+}
+
+@media screen and (min-width:1200px) {
+    .block-vitamins__buttons-wrapper {
+        position: relative;
+        top: 400px;
+        z-index: 3;
+        display: flex;
+        width: 1200px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+}
+
+.block-vitamins__buttons-wrapper div:not(:last-of-type){
+    margin-right: 30px;
+}
+
+.block-vitamins__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFF8F2 0%, rgba(255, 255, 255, 0) 100%), #FFF0E3;
+    box-shadow: 0px 9px 10px rgba(247, 213, 187, 0.51);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    box-shadow: 0px 9px 10px rgba(247, 213, 187, 0.51);
+}
+
+.block-vitamins__name{
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .block-vitamins__name {
+        display: block;
+        visibility: visible;
+        max-width: 216px;
+        font-weight: 800;
+        font-size: 26px;
+        line-height: 28px;
+    
+        text-align: center;
+        margin-top: 25px;
+    }
 }

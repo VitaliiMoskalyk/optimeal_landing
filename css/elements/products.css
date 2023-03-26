@@ -110,9 +110,9 @@
     content: "";
     position: absolute;
 
-    background-image: url(../../images/yoghurt-fruits.svg);
-    width: 325px;
-    height: 315px;
+    background-image: url(../../images/yoghurt-fruits.webp);
+    width: 319px;
+    height: 307px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -128,9 +128,9 @@
     content: "";
     position: absolute;
 
-    background-image: url(../../images/mother.svg);
-    width: 325px;
-    height: 307px;
+    background-image: url(../../images/mother.webp);
+    width: 290px;
+    height: 330px;
 
     background-repeat: no-repeat;
     background-position: center;
@@ -148,7 +148,7 @@
     content: "";
     position: absolute;
 
-    background-image: url(../../images/juice.svg);
+    background-image: url(../../images/juice.webp);
     width: 325px;
     height: 300px;
 

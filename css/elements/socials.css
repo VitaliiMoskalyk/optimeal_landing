@@ -28,6 +28,7 @@
     .block-socials__wrapper {
         /* max-width - 3 rem  -- inline style from <svg/>*/
         width: 2.8rem;
+        height: 100%;
         border-radius: 1.7rem;
     }
 }
@@ -35,17 +36,17 @@
 /* Background colours of social items */
 .block-socials :first-child a {
     background: var(--instBcg);
-    height: 100%;
+    
 }
 
 .block-socials :nth-child(2) a {
     background: var(--fbBcg);
-    height: 100%;
+   
 }
 
 .block-socials :last-child a {
     background: var(--telBcg);
-    height: 100%;
+ 
 }
 
 .block-socials li a:hover,.block-socials li a:focus{

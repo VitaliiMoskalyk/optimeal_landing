@@ -19,7 +19,7 @@
       <div class="block-header__navigation" id="main">
         <!-- Logo container -->
         <a href="#" class="block-header__logo"><svg viewBox="0 0 100 32" style="max-width: 11rem;">
-            <use href="./images/sprite.svg#icon-logo"></use>
+            <use href="./images/sprites/sprite.svg#icon-logo"></use>
           </svg></a>
         <!-- anchors, visible only from screen 1200 px -->
         <ul class="block-header__anchors">
@@ -33,19 +33,19 @@
           <li>
             <a href="https://www.instagram.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
                 style="max-width: 3rem;">
-                <use xlink:href="./images/sprite.svg#icon-instagram"></use>
+                <use xlink:href="./images/sprites/sprite.svg#icon-instagram"></use>
               </svg></a>
           </li>
           <li>
             <a href="https://uk-ua.facebook.com/" class="block-socials__wrapper" target="_blank"><svg
                 viewBox="0 0 32 32" style="max-width: 3rem;">
-                <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+                <use xlink:href="./images/sprites/sprite.svg#icon-facebook"></use>
               </svg></a>
           </li>
           <li>
             <a href="https://www.whatsapp.com/?lang=uk" class="block-socials__wrapper" target="_blank"><svg
                 viewBox="0 0 32 32" style="max-width: 3rem;">
-                <use xlink:href="./images/sprite.svg#icon-phone"></use>
+                <use xlink:href="./images/sprites/sprite.svg#icon-phone"></use>
               </svg></a>
           </li>
         </ul>
@@ -122,100 +122,137 @@
         <div class="cloud-left-icon"></div>
 
         <ul class="block-vitamins__list">
-          <li><img src="./images/calcium.png" alt="vitamin `calcium`" /></li>
-          <li><img src="./images/D3.png" alt="vitamin `D3`" /></li>
-          <li><img src="./images/omega.png" alt="vitamin `Omega`" /></li>
-          <li><img src="./images/vitzmin.png" alt="vitamin `vitzmin`" /></li>
+          <li><img src="./images/calcium.webp" alt="vitamin `calcium`" />
+            <p class="block-vitamins__name">Крепкие кости</p>
+          </li>
+          <li><img src="./images/D3.webp" alt="vitamin `D3`" />
+            <p class="block-vitamins__name">Рост и развитие</p>
+          </li>
+          <li><img src="./images/omega.webp" alt="vitamin `Omega`" />
+            <p class="block-vitamins__name">Зрение,память,
+              внимательность</p>
+          </li>
+          <li><img src="./images/vitzmin.webp" alt="vitamin `vitzmin`" />
+            <p class="block-vitamins__name">Комплекс витаминов</p>
+          </li>
         </ul>
         <div class="block-vitamins_bottom"></div>
+
+      </div>
+      <div class="block-vitamins__buttons-wrapper">
+        <div class="block-vitamins__button"><img src="./images/arrow-left.webp" alt="right arrow" width="24"
+            height="24" /></div>
+        <div class="block-vitamins__button"><img src="./images/arrow-right.webp" alt="left arrow" width="24"
+            height="24" /></div>
+
       </div>
 
+
       <div class="container">
-        <div class="vitamins_wrapper">
-          <h2 class="vitamins_title">My <span class="vitamins_part">#1st</span> Vitamins</h2>
-          <a href="#" class="vitamins-variants visited">Описание продукта</a>
-          <a href="#" class="vitamins-variants">Свойства</a>
-
-          <div>
-            <p class="vitamins_description">
-              Биологические функции Витамина D3. Согласно многочисленным
-              исследованиям, витамин D3 положительно влияет на целый ряд
-              функций организма, среди которых необходимо выделить:
-              иммуномодулирующее действие, Укрепление костной ткани, Модуляция
-              клеточного роста Улучшение способности к обучению.
-            </p>
-            <div class="vitamins_complex">
-              <p><span class="complex-part">12+1</span>мультивитаминный комплекс</p>
-            </div>
-            <div class="vitamins_tastes">
-              <h4>Вкус:</h4>
-              <ul>
-                <li><span>банан-яблоко,</span></li>
-                <li><span>манго-клубника,</span></li>
-                <li><span>клубника-тоффифи</span></li>
-              </ul>
-            </div>
-
-
-
+        <div class="block-vitamins__wrapper">
+          <div class="block-vitamins__left">
+            <div class="cloud-right-icon"></div>
+            <div class="cloud-left-icon"></div>
           </div>
 
-          <a href="#" class="beautiful-button vitamins_button">Где купить?</a>
+          <div class="block-vitamins__right">
+            <h2 class="block-vitamins__title">My <span class="block-vitamins__title-part">#1st</span> Vitamins</h2>
+            <a href="#" class="block-vitamins__variants visited">Описание продукта</a>
+            <a href="#" class="block-vitamins__variants">Свойства</a>
+
+
+
+            <div>
+              <p class="block-vitamins__description">
+                Биологические функции Витамина D3. Согласно многочисленным
+                исследованиям, витамин D3 положительно влияет на целый ряд
+                функций организма, среди которых необходимо выделить:
+                иммуномодулирующее действие, Укрепление костной ткани, Модуляция
+                клеточного роста Улучшение способности к обучению.
+              </p>
+              <div class="block-vitamins__complex">
+                <span class="complex-part">12+1</span><span>мультивитаминный комплекс</span>
+              </div>
+              <div class="block-vitamins__tastes">
+                <h4>Вкус:</h4>
+                <ul>
+                  <li><span>банан-яблоко,</span></li>
+                  <li><span>манго-клубника,</span></li>
+                  <li><span>клубника-тоффифи</span></li>
+                </ul>
+              </div>
+
+            </div>
+
+            <a href="#" class="beautiful-button vitamins_button">Где купить?</a>
+
+          </div>
         </div>
       </div>
-
-
     </section>
-    <section class="recomendation">
-      <div class="container">
-        <h2 class="recomendation_title">OptiMeal Kids рекомендует</h2>
-        <ul>
-          <li>
-            <h3 class="recomendation_pretitle">My #1st Vita D3</h3>
-            <p class="recomendation_description">D3 просто необходим детям, которые мало времени проводят на свежем
-              воздухе.
-              Улучшает способность к обучению и обладает
-              иммуномодулирующим действием</p>
-          </li>
-          <li>
-            <h3 class="recomendation_pretitle">My #1st Calcium</h3>
-            <p class="recomendation_description">Кальций один из наиболее важных витаминов для растущего организма. Он
-              необходим Вашему ребенку для крепких
-              зубов и ногтей, а также для формирования прочного и здорового костного скелета</p>
-          </li>
-          <li>
-            <h3 class="recomendation_pretitle">My #1st Vitamins</h3>
-            <p class="recomendation_description">Сбалансированный комплекс витаминов, который содержит 13 важнейших
-              витаминов
-              для гармоничного развития ребенка.</p>
-          </li>
-          <li>
-            <h3 class="recomendation_pretitle">My #1st Omega3</h3>
-            <p class="recomendation_description">Для укрепления иммунитета, повышения умственных способностей, защиты
-              зрения и
-              правильного формирования костей и зубов.</p>
-          </li>
-        </ul>
 
+
+    <section class="block-recomendation">
+      <div class="container">
+        <div>
+          <h2 class="block-recomendation_title">OptiMeal Kids рекомендует</h2>
+          <ul>
+            <li>
+              <h3 class="block-recomendation_pretitle">My #1st Vita D3</h3>
+              <p class="block-recomendation_description">D3 просто необходим детям, которые мало времени проводят на
+                свежем
+                воздухе.
+                Улучшает способность к обучению и обладает
+                иммуномодулирующим действием</p>
+            </li>
+            <li>
+              <h3 class="block-recomendation_pretitle">My #1st Calcium</h3>
+              <p class="block-recomendation_description">Кальций один из наиболее важных витаминов для растущего
+                организма. Он
+                необходим Вашему ребенку для крепких
+                зубов и ногтей, а также для формирования прочного и здорового костного скелета</p>
+            </li>
+            <li>
+              <h3 class="block-recomendation_pretitle">My #1st Vitamins</h3>
+              <p class="block-recomendation_description">Сбалансированный комплекс витаминов, который содержит 13
+                важнейших
+                витаминов
+                для гармоничного развития ребенка.</p>
+            </li>
+            <li>
+              <h3 class="block-recomendation_pretitle">My #1st Omega3</h3>
+              <p class="block-recomendation_description">Для укрепления иммунитета, повышения умственных способностей,
+                защиты
+                зрения и
+                правильного формирования костей и зубов.</p>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="recomendation_pear"></div>
+      <div class="block-recomendation_pear"></div>
     </section>
 
 
-    <section class="gift">
+    <section class="block-gift">
       <div class="container">
-        <div class="gift_book"></div>
-        <h2 class="gift_title">Книжка-
-          раскраска
-          в подарок</h2>
-        <p class="gift_description">Чтобы ребенок не отставал в развитии, Вы должны постоянно придумывать новые игры.
-          Особенно важно воспитать в нем
-          усидчивость и умение сосредоточиться.
-          Раскраски прекрасно решают эту задачу.
-          Мы дарим детскую книжку-раскраску при покупке любого из товаров Optimeal Kids в магазинах Детский мир</p>
-        <span class="gift_more">Подробности акции
-          уточняйте в магазинах
-          «Детский мир»</span>
+        <div class="block-gift__wrapper">
+          <div class="gift_book"></div>
+          <div class="block-gift__text">
+            <h2 class="gift_title">Книжка-
+              раскраска
+              в подарок</h2>
+            <p class="gift_description">Чтобы ребенок не отставал в развитии, Вы должны постоянно придумывать новые
+              игры.
+              Особенно важно воспитать в нем
+              усидчивость и умение сосредоточиться.
+              Раскраски прекрасно решают эту задачу.
+              Мы дарим детскую книжку-раскраску при покупке любого из товаров Optimeal Kids в магазинах Детский мир</p>
+            <span class="gift_more">Подробности акции
+              уточняйте в магазинах
+              «Детский мир»</span>
+
+          </div>
+        </div>
       </div>
     </section>
 
@@ -261,23 +298,24 @@
         <li>
           <a href="https://www.instagram.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
               style="max-width: 3rem;">
-              <use xlink:href="./images/sprite.svg#icon-instagram"></use>
+              <use xlink:href="./images/sprites/sprite.svg#icon-instagram"></use>
             </svg></a>
         </li>
         <li>
           <a href="https://uk-ua.facebook.com/" class="block-socials__wrapper" target="_blank"><svg viewBox="0 0 32 32"
               style="max-width: 3rem;">
-              <use xlink:href="./images/sprite.svg#icon-facebook"></use>
+              <use xlink:href="./images/sprites/sprite.svg#icon-facebook"></use>
             </svg></a>
         </li>
         <li>
           <a href="https://www.whatsapp.com/?lang=uk" class="block-socials__wrapper" target="_blank"><svg
               viewBox="0 0 32 32" style="max-width: 3rem;">
-              <use xlink:href="./images/sprite.svg#icon-phone"></use>
+              <use xlink:href="./images/sprites/sprite.svg#icon-phone"></use>
             </svg></a>
         </li>
       </ul>
-      <img src="./images/optimeal-logo.svg" alt="optimeal sport nutririon logo" class="footer-logo" />
+      <img src="./images/optimeal-logo.webp" alt="optimeal sport nutririon logo" class="footer-logo" width="9.4rem"
+        height="2.8rem" />
 
     </div>
   </footer>
@@ -296,9 +334,7 @@
     }
 
   </script>
-  <script src="./js/slider.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+
 </body>
 
 

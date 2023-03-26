@@ -54,6 +54,7 @@ a {
 img {
   max-width: 100%;
   display: block;
+  margin: 0;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
