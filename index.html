@@ -122,17 +122,17 @@
         <div class="cloud-left-icon"></div>
 
         <ul class="block-vitamins__list">
-          <li><img src="./images/calcium.webp" alt="vitamin `calcium`" />
+          <li><img src="./images/calcium.webp" alt="vitamin `calcium`" loading="lazy" />
             <p class="block-vitamins__name">Крепкие кости</p>
           </li>
-          <li><img src="./images/D3.webp" alt="vitamin `D3`" />
+          <li><img src="./images/D3.webp" alt="vitamin `D3`" loading="lazy" />
             <p class="block-vitamins__name">Рост и развитие</p>
           </li>
-          <li><img src="./images/omega.webp" alt="vitamin `Omega`" />
+          <li><img src="./images/omega.webp" alt="vitamin `Omega`" loading="lazy" />
             <p class="block-vitamins__name">Зрение,память,
               внимательность</p>
           </li>
-          <li><img src="./images/vitzmin.webp" alt="vitamin `vitzmin`" />
+          <li><img src="./images/vitzmin.webp" alt="vitamin `vitzmin`" loading="lazy" />
             <p class="block-vitamins__name">Комплекс витаминов</p>
           </li>
         </ul>
@@ -140,10 +140,10 @@
 
       </div>
       <div class="block-vitamins__buttons-wrapper">
-        <div class="block-vitamins__button"><img src="./images/arrow-left.webp" alt="right arrow" width="24"
-            height="24" /></div>
-        <div class="block-vitamins__button"><img src="./images/arrow-right.webp" alt="left arrow" width="24"
-            height="24" /></div>
+        <div class="block-vitamins__button"><img src="./images/arrow-left.webp" alt="right arrow" width="24" height="24"
+            loading="lazy" /></div>
+        <div class="block-vitamins__button"><img src="./images/arrow-right.webp" alt="left arrow" width="24" height="24"
+            loading="lazy" /></div>
 
       </div>
 
@@ -174,7 +174,7 @@
                 <span class="complex-part">12+1</span><span>мультивитаминный комплекс</span>
               </div>
               <div class="block-vitamins__tastes">
-                <h4>Вкус:</h4>
+                <h3>Вкус:</h3>
                 <ul>
                   <li><span>банан-яблоко,</span></li>
                   <li><span>манго-клубника,</span></li>
@@ -236,29 +236,27 @@
     <section class="block-gift">
       <div class="container">
         <div class="block-gift__wrapper">
-          <div class="gift_book"></div>
+          <div class="block-gift__book"></div>
           <div class="block-gift__text">
-            <h2 class="gift_title">Книжка-
+            <h2 class="block-gift__title">Книжка-
               раскраска
               в подарок</h2>
-            <p class="gift_description">Чтобы ребенок не отставал в развитии, Вы должны постоянно придумывать новые
+            <p class="block-gift__description">Чтобы ребенок не отставал в развитии, Вы должны постоянно придумывать
+              новые
               игры.
               Особенно важно воспитать в нем
               усидчивость и умение сосредоточиться.
               Раскраски прекрасно решают эту задачу.
               Мы дарим детскую книжку-раскраску при покупке любого из товаров Optimeal Kids в магазинах Детский мир</p>
-            <span class="gift_more">Подробности акции
+            <span class="block-gift__more">Подробности акции
               уточняйте в магазинах
               «Детский мир»</span>
-
           </div>
         </div>
       </div>
     </section>
-
-
-
   </main>
+
   <footer class="contact_us" id="contacts">
     <div class="container">
       <h2 class="contact_us-title">Связаться
@@ -274,24 +272,25 @@
         </div>
 
       </form>
-
+      <div class="contact_us__rude"></div>
+      <div class="contact_us__yellow"></div>
       <p class="contact_us-warn">Не является
         лекарственным средством</p>
       <hr />
 
       <address>
-        <h4 class="address-title">ПРОИЗВОДИТЕЛЬ</h4>
-        <p class="address-description">ООО «ЭНЕРГИЯ ДВИЖЕНИЯ»
-          65012, Одесская обл.,
-          г. Одесса, пр-кт Гагарина, д. 190, оф. 507</p>
-        <h4 class="address-title">КОНТАКТЫ</h4>
-        <div class="address-description">
-          <a href="tel:+88462253202">8 (846) 225-32-02
-          </a>
-          <a href="mail:zakaz@optimeal.pro">zakaz@optimeal.pro
-          </a>
-          <a href="#">www.optimeal.pro</a>
-        </div>
+        <h3 class="address-title">ПРОИЗВОДИТЕЛЬ</h4>
+          <p class="address-description">ООО «ЭНЕРГИЯ ДВИЖЕНИЯ»
+            65012, Одесская обл.,
+            г. Одесса, пр-кт Гагарина, д. 190, оф. 507</p>
+          <h3 class="address-title">КОНТАКТЫ</h4>
+            <div class="address-description">
+              <a href="tel:+88462253202">8 (846) 225-32-02
+              </a>
+              <a href="mail:zakaz@optimeal.pro">zakaz@optimeal.pro
+              </a>
+              <a href="#">www.optimeal.pro</a>
+            </div>
       </address>
 
       <ul class="block-socials">
@@ -315,7 +314,7 @@
         </li>
       </ul>
       <img src="./images/optimeal-logo.webp" alt="optimeal sport nutririon logo" class="footer-logo" width="9.4rem"
-        height="2.8rem" />
+        height="2.8rem" loading="lazy" />
 
     </div>
   </footer>
@@ -325,14 +324,13 @@
       Некоторые события не работают в демонстрационном режиме
     </div>
   </div> -->
-  <script>
+  <script defer>
     if (window.innerWidth < 768) {
       const element = document.getElementById('main-title');
       const text = element.textContent;
       const index = text.indexOf('.');
       element.textContent = text.substring(0, index + 1);
     }
-
   </script>
 
 </body>

@@ -33,10 +33,16 @@
     background-image: url(../../images/cloud-left.webp);
     background-position: left;
 
-    animation-name: slide;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+   
     
+}
+
+@media screen and (min-width:768px) {
+    .cloud-left-icon {
+    animation-name: slide;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
 }
 
 .cloud-right-icon {
@@ -48,9 +54,14 @@
     background-image: url(../../images/cloud-right.webp);
     background-position: left bottom;
 
-    animation-name: slide2;
-    animation-duration: 45s;
-    animation-iteration-count: infinite;
+    
+}
+@media screen and (min-width:768px) {
+    .cloud-right-icon {
+        animation-name: slide2;
+            animation-duration: 45s;
+            animation-iteration-count: infinite;
+    }
 }
 
 .friends-icon {
